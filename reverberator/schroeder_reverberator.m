@@ -1,15 +1,14 @@
 pkg load signal
-
 addpath("../utilities");
 
-# x = signal
-# fs = sample rate
-[x,fs] = audioread('Path\to\sample.wav');
+% x = signal
+% fs = sample rate
+[x,fs] = audioread('../sounds/sample.wav');
 x = x(:,1);
 fs = 44100;
 dt = 1/fs;
 
-% ----------------------parallel comb section---------------------------------%
+% ----------------------parallel comb filters section---------------------------------%
 % delays must be spread over a range 1:1.5
 % around 30ms-45ms
 % gains can't exceed .85
@@ -91,7 +90,7 @@ allpass2 = filter(ap_ff2, ap_fb2, allpass1);
 % this simulates proximity of the source
 
 G = 0.8;
-output = G*allpass2 + x;
+output = G * allpass2 + x;
 
 # plays the output
 %sound(output, fs);

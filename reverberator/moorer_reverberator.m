@@ -1,7 +1,7 @@
 pkg load signal;
 addpath('../utilities');
 
-[x,fs] = audioread('C:\Users\alfre\Tesis\Samples\piano-lid.wav');
+[x,fs] = audioread('../sounds/sample.wav');
 x = x(:,1);
 
 %lowpass filter 

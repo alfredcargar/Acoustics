@@ -7,7 +7,10 @@ C = 331.6 +0.6*T;
 fs = 44100;
 dt = 1/fs;
 N = 1000;
-x = zeros(N,1); x(N/10) = 1;
+
+% x = impulse signal
+x = zeros(N,1); 
+x(N/10) = 1;
 
 totDelay = 8;
 ap_fb = zeros(8,1); ap_fb(1) = 1; ap_fb(end) = 0.3;
