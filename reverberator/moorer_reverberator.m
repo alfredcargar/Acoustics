@@ -1,3 +1,6 @@
+pkg load signal;
+addpath('../utilities');
+
 [x,fs] = audioread('C:\Users\alfre\Tesis\Samples\piano-lid.wav');
 x = x(:,1);
 

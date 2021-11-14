@@ -1,8 +1,10 @@
 pkg load signal
 
+addpath("../utilities");
+
 # x = signal
 # fs = sample rate
-[x,fs] = audioread('C:\Path\to\sample.wav');
+[x,fs] = audioread('Path\to\sample.wav');
 x = x(:,1);
 fs = 44100;
 dt = 1/fs;
@@ -91,7 +93,8 @@ allpass2 = filter(ap_ff2, ap_fb2, allpass1);
 G = 0.8;
 output = G*allpass2 + x;
 
-sound(output, fs);
+# plays the output
+%sound(output, fs);
 
 figure(1)
 plot(x)

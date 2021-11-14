@@ -1,4 +1,5 @@
 pkg load signal
+addpath('../utilities');
 
 %CONSTANTS T=room temperature; C=speed of sound; fs=sample rate; x=input
 T = 20;
