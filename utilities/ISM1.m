@@ -1,4 +1,8 @@
-%stores a matrix for the first order coordinates of virtual sources
+%Image Source Method
+%Computes the virtual sources of the 1st reflections off the walls.
+
+%Output: matrix storing 4 pairs fo coordinates, one for each wall.
+
 function [output] = ISM1(S,D)
 
 dx1 = S(1);
