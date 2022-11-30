@@ -33,10 +33,10 @@ d2 = dpoints(fo(2,:),L);
 d3 = dpoints(fo(3,:),L);
 d4 = dpoints(fo(4,:),L);
 %now the delay times for the combs (in ms)
-del1 = soundtime2(fo(1,:),L,T)*1e3;
-del2 = soundtime2(fo(2,:),L,T)*1e3;
-del3 = soundtime2(fo(3,:),L,T)*1e3;
-del4 = soundtime2(fo(4,:),L,T)*1e3;
+del1 = soundtime(fo(1,:),L,T)*1e3;
+del2 = soundtime(fo(2,:),L,T)*1e3;
+del3 = soundtime(fo(3,:),L,T)*1e3;
+del4 = soundtime(fo(4,:),L,T)*1e3;
 
 %compute theta for each virtual source
 deltay1 = abs(fo(1,2)-L(2));
