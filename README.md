@@ -1,6 +1,6 @@
 # Reverb algorithms
 
-Some studies on acoustics I did as part of my thesis _"Localization of sound objects in virtual acoustics"_.
+Some studies on acoustics I did as part of my Bachelor's degree thesis _"Localization of sound objects in virtual acoustics"_.
 It includes classic reverb algorithms (Schroeder, Moorer and Gardner)[^1][^2][^3], as well as my final work implementing spatialization of sound in `reverberator.m`. 
 
 
